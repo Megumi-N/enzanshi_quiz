@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>再代入不可の演算子だけを選ぶクイズ</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      <div v-if="!completed">
+        <h3 class="title">第{{ questionIndex+1 }}問</h3>
+        <p>再代入できない演算子を選びなさい</p>
+        <div class="d-grid gap-2">
+          <button type="button" class="btn btn-outline-info btn-lg" v-for="(answer,index) in currentQuestion.answers"
+            @click="addAnswer(index)"> {{ (index+1) }}. {{ answer }} </button>
+        </div>
+      </div>
+      <!-- 結果 -->
+      <div v-if="completed">
+        <h3 class="title">結果</h3>
+        <div v-for="(question,index) in this.questions">
+          <div class="card border-dark mb-5 mx-auto">
+            <p class="card-header">第{{ index+1 }}問</p>
+            <div class="card-text">
+              <span v-if="self_answer_index=answers[index], question.answer == answers[index]" class="v-if">
+                <p>○正解</p>
+              </span>
+              <span v-else>
+                <p class="uncollect">×不正解</p>
+                <p>あなたは<span class="choice_answer">「{{question.answers[self_answer_index] }}」</span>を選びました。</p>
+                <p>正解は</p>
+                <p class="collect_answer">{{ question.answers[question.answer] }}</p>
+                <p>でした</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="script.js"></script>
+  </body>
+</html>

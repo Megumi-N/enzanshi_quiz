@@ -1,0 +1,48 @@
+html body {
+  text-align: center;
+  height: auto;
+  width: 100vw;
+  margin: 1em;
+
+}
+
+div button {
+  margin: 1rem;
+}
+
+.title{
+  font-weight: bold;
+  font-size: clamp(30px, 4vw, 5vw);
+}
+
+/* 結果 */
+.card{
+  max-width: 80vw;
+}
+
+
+.card-header{
+  font-size: 25px;
+}
+
+.card-text{
+  margin-top: 1em;
+}
+
+.v-if{
+  color:green
+}
+
+.uncollect{
+  color:red;
+  font-weight: bold;
+}
+
+.choice_answer{
+  font-weight: bold;
+}
+
+.collect_answer{
+  color:blue;
+  font-weight:bold;
+}
