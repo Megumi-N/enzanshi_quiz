@@ -20,7 +20,7 @@ new Vue({
       {
         question: "再代入できない演算子を選びなさい",
         answers: ["<<", "`", "..", "&"],
-        answer: 0,
+        answer: 2,
       },
       {
         question: "再代入できない演算子を選びなさい",
