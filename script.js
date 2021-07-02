@@ -3,6 +3,16 @@ new Vue({
   data: {
     questions: [
       {
+        question: "以下の配列メソッドで破壊的メソッドを選びなさい",
+        answers: ["<<", "compact", "count", "[]"],
+        answer: 0,
+      },
+      {
+        question: "以下の配列メソッドで破壊的メソッドを選びなさい",
+        answers: ["concat", "to_s", "delete_at", "drop"],
+        answer: 0,
+      },
+      {
         question: "再代入できない演算子を選びなさい",
         answers: ["=", "!", "%", "+"],
         answer: 0,

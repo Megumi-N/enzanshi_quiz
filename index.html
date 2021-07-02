@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>再代入不可の演算子だけを選ぶクイズ</title>
+    <title>セルフ問題集</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div id="app">
       <div v-if="!completed">
         <h3 class="title">第{{ questionIndex+1 }}問</h3>
-        <p>再代入できない演算子を選びなさい</p>
         <div class="d-grid gap-2">
+          <p>{{ currentQuestion.question}}</p>
           <button type="button" class="btn btn-outline-info btn-lg" v-for="(answer,index) in currentQuestion.answers"
             @click="addAnswer(index)"> {{ (index+1) }}. {{ answer }} </button>
         </div>
