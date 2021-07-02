@@ -89,21 +89,12 @@ new Vue({
   methods: {
     addAnswer: function (index) {
       this.answers.push(index);
+      if (this.currentQuestion.answer == this.answers[this.questionIndex]) {
+        this.correctCount++;
+      }
       if (!this.completed) {
         this.questionIndex++;
-      } else if (this.questions.length == this.answers.length) {
-        let correctCount = 0;
-        for (let i in this.answers) {
-          let answer = this.answers[i];
-          if (answer == this.questions[i].answer) {
-            correctCount++;
-          }
-        }
-        // alert(correctCount + "問正解です");
       }
-      //  else {
-      //   this.questionIndex++;
-      // }
     },
   },
 });
