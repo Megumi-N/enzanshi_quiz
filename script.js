@@ -76,6 +76,7 @@ new Vue({
     ],
     questionIndex: 0,
     answers: [],
+    correctCount: 0,
   },
   computed: {
     currentQuestion: function () {
@@ -90,17 +91,17 @@ new Vue({
       this.answers.push(index);
       if (!this.completed) {
         this.questionIndex++;
+      } else if (this.questions.length == this.answers.length) {
+        let correctCount = 0;
+        for (let i in this.answers) {
+          let answer = this.answers[i];
+          if (answer == this.questions[i].answer) {
+            correctCount++;
+          }
+        }
+        // alert(correctCount + "問正解です");
       }
-      // if (this.questions.length == this.answers.length) {
-      // let correctCount = 0;
-      // for (let i in this.answers) {
-      //   let answer = this.answers[i];
-      //   if (answer == this.questions[i].answer) {
-      //     correctCount++;
-      //   }
-      // }
-      // alert(correctCount + "問正解です");
-      // } else {
+      //  else {
       //   this.questionIndex++;
       // }
     },
