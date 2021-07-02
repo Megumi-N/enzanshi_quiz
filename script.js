@@ -3,6 +3,12 @@ new Vue({
   data: {
     questions: [
       {
+        question:
+          "以下のメソッドで同一性判定(object_idが一致するかの判定)をするものを選びなさい",
+        answers: ["eql?メソッド", "==メソッド", "equal?メソッド"],
+        answer: 2,
+      },
+      {
         question: "以下の配列メソッドで破壊的メソッドを選びなさい",
         answers: ["<<", "compact", "count", "[]"],
         answer: 0,
