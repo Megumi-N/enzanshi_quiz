@@ -3,6 +3,26 @@ new Vue({
   data: {
     questions: [
       {
+        question: "2進数の基底指示子はどれでしょう。",
+        answers: ["0b", "0oまたは0", "0x", "0d"],
+        answer: 0,
+      },
+      {
+        question: "8進数の基底指示子はどれでしょう。",
+        answers: ["0oまたは0", "0x", "0b", "0d"],
+        answer: 0,
+      },
+      {
+        question: "10進数の基底指示子はどれでしょう。",
+        answers: ["0b", "0oまたは0", "0d", "0x"],
+        answer: 2,
+      },
+      {
+        question: "16進数の基底指示子はどれでしょう。",
+        answers: ["0b", "0oまたは0", "0d", "0x"],
+        answer: 3,
+      },
+      {
         question:
           "以下のメソッドで同一性判定(object_idが一致するかの判定)をするものを選びなさい",
         answers: ["eql?メソッド", "==メソッド", "equal?メソッド"],
