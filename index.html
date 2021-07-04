@@ -30,6 +30,9 @@
       <div v-if="completed">
         <h3 class="title">結果</h3>
         <p>{{questions.length}}問中{{correctCount}}問正解</p>
+        <a v-bind:href="url+questions.length+'問中'+correctCount+'問正解しました。%0a'+link" target="_blank" rel="noopener" >
+          Twitterへ投稿
+        </a>
         <div v-for="(question,index) in this.questions">
           <div class="card border-dark mb-5 mx-auto">
             <p class="card-header">第{{ index+1 }}問</p>

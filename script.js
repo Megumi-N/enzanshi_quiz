@@ -97,6 +97,8 @@ new Vue({
     questionIndex: 0,
     answers: [],
     correctCount: 0,
+    url: "https://twitter.com/intent/tweet?text=",
+    link: "https://festive-knuth-449665.netlify.app/",
   },
   computed: {
     currentQuestion: function () {
