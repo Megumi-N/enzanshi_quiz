@@ -3,6 +3,62 @@ new Vue({
   data: {
     questions: [
       {
+        question: "数値を表す組み込みクラスのComlexは何のクラスでしょう",
+        answers: ["有理数", "整数", "浮動小数点", "複素数"],
+        answer: 3,
+      },
+      {
+        question: "数値を表す組み込みクラスのBignumは何のクラスでしょう",
+        answers: ["有理数", "全ての整数", "整数のうち大きな整数", "複素数"],
+        answer: 2,
+      },
+      {
+        question: "to_sメソッドに対して、inspectの違いは何でしょう",
+        answers: [
+          "インスタンス変数や値が出力される",
+          "オブジェクトの内容の文字列が返される",
+          "オブジェクトの値の文字列が出力される",
+        ],
+        answer: 0,
+      },
+      {
+        question:
+          "未定義なメソッドが呼び出された時に呼ばれるメソッドは以下のうちどれでしょう",
+        answers: ["to_s", "inspect", "method_missing"],
+        answer: 2,
+      },
+      {
+        question:
+          "次のうち、インスタンス変数一覧を取得するメソッドはどれでしょう",
+        answers: [
+          "instance_variable_get",
+          "instance_variable_set",
+          "instance_variables",
+        ],
+        answer: 2,
+      },
+      {
+        question: "数値を表す組み込みクラスのBignumは何のクラスでしょう",
+        answers: ["有理数", "全ての整数", "整数のうち大きな整数", "複素数"],
+        answer: 2,
+      },
+      {
+        question: "オブジェクト全てのメソッドを取得するメソッドはどれでしょう",
+        answers: ["methods", "clone", "instance_vareables"],
+        answer: 0,
+      },
+      {
+        question: "オブジェクトの特異メソッドを取得するメソッドはどれでしょう",
+        answers: ["methods", "singleton_methods", "private_methods"],
+        answer: 1,
+      },
+      {
+        question:
+          "freezeメソッドが設定されたものを変更しようとすると発生するエラーはどれでしょう",
+        answers: ["ArgumentError", "NoMethodError", "RunTimeError"],
+        answer: 2,
+      },
+      {
         question: "2進数の基底指示子はどれでしょう。",
         answers: ["0b", "0oまたは0", "0x", "0d"],
         answer: 0,
