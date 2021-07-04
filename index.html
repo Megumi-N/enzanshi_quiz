@@ -22,7 +22,7 @@
         <h3 class="title">第{{ questionIndex+1 }}問</h3>
         <div class="d-grid gap-2">
           <p>{{ currentQuestion.question}}</p>
-          <button type="button" class="btn btn-outline-info btn-lg" v-for="(answer,index) in currentQuestion.answers"
+          <button type="button" class="btn btn-outline-info btn-lg" autofocus v-for="(answer,index) in currentQuestion.answers"
             @click="addAnswer(index)"> {{ (index+1) }}. {{ answer }} </button>
         </div>
       </div>
