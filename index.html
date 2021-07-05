@@ -42,10 +42,15 @@
               </span>
               <span v-else>
                 <p class="uncollect">×不正解</p>
+                <p>問題：{{question.question}}</p>
                 <p>あなたは<span class="choice_answer">「{{question.answers[self_answer_index] }}」</span>を選びました。</p>
                 <p>正解は</p>
                 <p class="collect_answer">{{ question.answers[question.answer] }}</p>
                 <p>でした</p>
+                <div v-if="question.description" class="description">
+                  <span>< 解説 ></span>
+                  <p>{{ question.description}}</p>
+                </div>
               </span>
             </div>
           </div>

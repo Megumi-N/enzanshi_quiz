@@ -3,6 +3,34 @@ new Vue({
   data: {
     questions: [
       {
+        question: "0.5.ceilの実行結果は以下のうちどちらか",
+        answers: ["0", "1"],
+        answer: 1,
+        description:
+          "Numericクラスのインスタンスメソッドであるceilメソッドは、自身と等しいかより大きな整数のうち最小のものを返す。(小数点以下を切り上げ、より大きい方の整数に丸める)",
+      },
+      {
+        question: "0.5.floorの実行結果は以下のうちどちらか",
+        answers: ["0", "1"],
+        answer: 0,
+        description:
+          "Numericクラスのインスタンスメソッドであるfloorメソッドは、自身と等しいかより小さな整数のうち最大のものを返す。(小数点以下を切り下げ、より小さい方の整数に丸める)",
+      },
+      {
+        question: "0.5.roundの実行結果は以下のうちどちらか",
+        answers: ["0", "1"],
+        answer: 0,
+        description:
+          "Numericクラスのインスタンスメソッドであるroundメソッドは、自身と最も近い整数を返し、中央値0.5や-0.5はそれぞれ1,-1に切り上げされる。",
+      },
+      {
+        question: "0.50.truncateの実行結果は以下のうちどちらか",
+        answers: ["0", "1"],
+        answer: 0,
+        description:
+          "Numericクラスのインスタンスメソッドであるtruncateメソッドは、0から自身までの整数で、自身にもっとも近い整数を返す。",
+      },
+      {
         question: "数値を表す組み込みクラスのComlexは何のクラスでしょう",
         answers: ["有理数", "整数", "浮動小数点", "複素数"],
         answer: 3,
@@ -35,11 +63,6 @@ new Vue({
           "instance_variable_set",
           "instance_variables",
         ],
-        answer: 2,
-      },
-      {
-        question: "数値を表す組み込みクラスのBignumは何のクラスでしょう",
-        answers: ["有理数", "全ての整数", "整数のうち大きな整数", "複素数"],
         answer: 2,
       },
       {
