@@ -23,7 +23,7 @@
         <div class="d-grid gap-2">
           <p>{{ currentQuestion.question}}</p>
           <button type="button" class="btn btn-outline-info btn-lg" autofocus v-for="(answer,index) in currentQuestion.answers"
-            @click="addAnswer(index)"> {{ (index+1) }}. {{ answer }} </button>
+            @click="addAnswer(index)"> {{ answer }} </button>
         </div>
       </div>
       <!-- 結果 -->
