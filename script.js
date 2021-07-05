@@ -19,7 +19,7 @@ new Vue({
       {
         question: "0.5.roundの実行結果は以下のうちどちらか",
         answers: ["0", "1"],
-        answer: 0,
+        answer: 1,
         description:
           "Numericクラスのインスタンスメソッドであるroundメソッドは、自身と最も近い整数を返し、中央値0.5や-0.5はそれぞれ1,-1に切り上げされる。",
       },
