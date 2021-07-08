@@ -30,7 +30,7 @@
       <div v-if="completed">
         <h3 class="title">結果</h3>
         <p>{{questions.length}}問中{{correctCount}}問正解</p>
-        <a v-bind:href="url+questions.length+'問中'+correctCount+'問正解しました。%0a'+link" target="_blank" rel="noopener" >
+        <a v-bind:href="url+questions.length+'問中'+correctCount+'問正解しました。%0a'+'%23ruby%0a%23ruby問題%0a'+link" target="_blank" rel="noopener" >
           Twitterへ投稿
         </a>
         <div v-for="(question,index) in this.questions">
