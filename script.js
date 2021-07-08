@@ -3,6 +3,54 @@ new Vue({
   data: {
     questions: [
       {
+        question: "sizeメソッドのエイリアスメソッドはどれでしょう",
+        answers: ["select", "length", "prepend"],
+        answer: 1,
+        description: "",
+      },
+      {
+        question: "prependメソッドのエイリアスメソッドはどれでしょう",
+        answers: ["select", "product", "unshift"],
+        answer: 2,
+        description: "",
+      },
+      {
+        question: "ハッシュのキーを配列として返すメソッドはどちらでしょう",
+        answers: ["values", "keys"],
+        answer: 1,
+        description: "",
+      },
+      {
+        question:
+          "ハッシュの中に指定されたキーが存在するか確認するメソッドではないものを選びなさい",
+        answers: ["has_key?", "member?", "key?", "include?", "value?"],
+        answer: 4,
+        description: "",
+      },
+      {
+        question: "新しいキーと値を取得する場合、正しい構文はどれでしょう",
+        answers: [
+          "ハッシュ[値]=キー",
+          "ハッシュ[キー]=値",
+          "ハッシュ=[キー][値]",
+        ],
+        answer: 1,
+        description:
+          "イミュータブルとは、作成後にその状態を変えることのできないオブジェクトのこと。",
+      },
+      {
+        question: "シンボルの特徴で正しいものを選びなさい",
+        answers: [
+          "整数で管理",
+          "文字列より処理が遅い",
+          "文字列よりメモリ使用効率が悪い",
+          "object_idが異なる",
+        ],
+        answer: 0,
+        description:
+          "シンボルの特徴：①内部的に整数②同じシンボルは同じオブジェクト(object_idが一致)のため使用効率がいい③イミュータブル",
+      },
+      {
         question:
           "arrayクラスのselectメソッドのエイリアスメソッドはどれでしょう",
         answers: ["find_all", "collect", "reduce", "detect"],
@@ -117,20 +165,20 @@ new Vue({
       },
       {
         question: "8進数の基底指示子はどれでしょう。",
-        answers: ["0oまたは0", "0x", "0b", "0d"],
-        answer: 0,
+        answers: ["0b", "0oまたは0", "0x", "0d"],
+        answer: 1,
         description: "",
       },
       {
         question: "10進数の基底指示子はどれでしょう。",
-        answers: ["0b", "0oまたは0", "0d", "0x"],
-        answer: 2,
+        answers: ["0b", "0oまたは0", "0x", "0d"],
+        answer: 3,
         description: "",
       },
       {
         question: "16進数の基底指示子はどれでしょう。",
-        answers: ["0b", "0oまたは0", "0d", "0x"],
-        answer: 3,
+        answers: ["0b", "0oまたは0", "0x", "0d"],
+        answer: 2,
         description: "",
       },
       {
@@ -153,72 +201,16 @@ new Vue({
         description: "",
       },
       {
-        question: "再代入できない演算子を選びなさい",
-        answers: ["=", "!", "%", "+"],
+        question: "再代入できない演算子の組み合わせで、正しいものを選びなさい",
+        answers: [
+          "=  ?:  ..  ...  not  &&  and  ||  or  ::",
+          "=  ?:  ..  ...  not  &  and  |  or  ::",
+          "=  ?:  ..  ...  &&  <=>  ==  ===  =~ ||  ::",
+        ],
         answer: 0,
         description: "",
       },
-      {
-        question: "再代入できない演算子を選びなさい",
-        answers: ["!", "~", "**", "?"],
-        answer: 3,
-        description: "",
-      },
-      {
-        question: "再代入できない演算子を選びなさい",
-        answers: [":", "!~", "[]", "%"],
-        answer: 0,
-        description: "",
-      },
-      {
-        question: "再代入できない演算子を選びなさい",
-        answers: ["<<", "`", "..", "&"],
-        answer: 2,
-        description: "",
-      },
-      {
-        question: "再代入できない演算子を選びなさい",
-        answers: ["<=", "...", "=~", "^"],
-        answer: 1,
-        description: "",
-      },
-      {
-        question: "再代入できない演算子を選びなさい",
-        answers: ["not", "/", "+", ">>"],
-        answer: 0,
-        description: "",
-      },
-      {
-        question: "再代入できない演算子を選びなさい",
-        answers: ["[]=", "!", "&&", "!="],
-        answer: 2,
-        description: "",
-      },
-      {
-        question: "再代入できない演算子を選びなさい",
-        answers: [">", "||", ">>", "+@"],
-        answer: 1,
-        description: "",
-      },
-      {
-        question: "再代入できない演算子を選びなさい",
-        answers: ["-", "^", "=~", "or"],
-        answer: 3,
-        description: "",
-      },
-      {
-        question: "再代入できない演算子を選びなさい",
-        answers: ["[]", "|", "::", "&"],
-        answer: 2,
-        description: "",
-      },
-      {
-        question: "再代入できない演算子を選びなさい",
-        answers: ["===", "+", "*", "自己代入演算子"],
-        answer: 3,
-        description: "",
-      },
-    ],
+    ], // end
     questionIndex: 0,
     answers: [],
     correctCount: 0,
