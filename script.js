@@ -3,6 +3,32 @@ new Vue({
   data: {
     questions: [
       {
+        question:
+          "arrayクラスのselectメソッドのエイリアスメソッドはどれでしょう",
+        answers: ["find_all", "collect", "reduce", "detect"],
+        answer: 0,
+        description: "",
+      },
+      {
+        question: "arrayクラスのfindメソッドのエイリアスメソッドはどれでしょう",
+        answers: ["find_all", "collect", "reduce", "detect"],
+        answer: 3,
+        description: "",
+      },
+      {
+        question: "arrayクラスのmapメソッドのエイリアスメソッドはどれでしょう",
+        answers: ["find_all", "collect", "reduce", "detect"],
+        answer: 1,
+        description: "",
+      },
+      {
+        question:
+          "arrayクラスのinjectメソッドのエイリアスメソッドはどれでしょう",
+        answers: ["find_all", "collect", "reduce", "detect"],
+        answer: 2,
+        description: "",
+      },
+      {
         question: "0.5.ceilの実行結果は以下のうちどちらか",
         answers: ["0", "1"],
         answer: 1,
@@ -34,11 +60,7 @@ new Vue({
         question: "数値を表す組み込みクラスのComlexは何のクラスでしょう",
         answers: ["有理数", "整数", "浮動小数点", "複素数"],
         answer: 3,
-      },
-      {
-        question: "数値を表す組み込みクラスのBignumは何のクラスでしょう",
-        answers: ["有理数", "全ての整数", "整数のうち大きな整数", "複素数"],
-        answer: 2,
+        description: "",
       },
       {
         question: "to_sメソッドに対して、inspectの違いは何でしょう",
@@ -48,12 +70,14 @@ new Vue({
           "オブジェクトの値の文字列が出力される",
         ],
         answer: 0,
+        description: "",
       },
       {
         question:
           "未定義なメソッドが呼び出された時に呼ばれるメソッドは以下のうちどれでしょう",
         answers: ["to_s", "inspect", "method_missing"],
         answer: 2,
+        description: "",
       },
       {
         question:
@@ -64,113 +88,135 @@ new Vue({
           "instance_variables",
         ],
         answer: 2,
+        description: "",
       },
       {
         question: "オブジェクト全てのメソッドを取得するメソッドはどれでしょう",
-        answers: ["methods", "clone", "instance_vareables"],
+        answers: ["methods", "clone", "instance_variables"],
         answer: 0,
+        description: "",
       },
       {
         question: "オブジェクトの特異メソッドを取得するメソッドはどれでしょう",
         answers: ["methods", "singleton_methods", "private_methods"],
         answer: 1,
+        description: "",
       },
       {
         question:
           "freezeメソッドが設定されたものを変更しようとすると発生するエラーはどれでしょう",
         answers: ["ArgumentError", "NoMethodError", "RunTimeError"],
         answer: 2,
+        description: "",
       },
       {
         question: "2進数の基底指示子はどれでしょう。",
         answers: ["0b", "0oまたは0", "0x", "0d"],
         answer: 0,
+        description: "",
       },
       {
         question: "8進数の基底指示子はどれでしょう。",
         answers: ["0oまたは0", "0x", "0b", "0d"],
         answer: 0,
+        description: "",
       },
       {
         question: "10進数の基底指示子はどれでしょう。",
         answers: ["0b", "0oまたは0", "0d", "0x"],
         answer: 2,
+        description: "",
       },
       {
         question: "16進数の基底指示子はどれでしょう。",
         answers: ["0b", "0oまたは0", "0d", "0x"],
         answer: 3,
+        description: "",
       },
       {
         question:
           "以下のメソッドで同一性判定(object_idが一致するかの判定)をするものを選びなさい",
         answers: ["eql?メソッド", "==メソッド", "equal?メソッド"],
         answer: 2,
+        description: "",
       },
       {
         question: "以下の配列メソッドで破壊的メソッドを選びなさい",
         answers: ["<<", "compact", "count", "[]"],
         answer: 0,
+        description: "",
       },
       {
         question: "以下の配列メソッドで破壊的メソッドを選びなさい",
         answers: ["concat", "to_s", "delete_at", "drop"],
         answer: 0,
+        description: "",
       },
       {
         question: "再代入できない演算子を選びなさい",
         answers: ["=", "!", "%", "+"],
         answer: 0,
+        description: "",
       },
       {
         question: "再代入できない演算子を選びなさい",
         answers: ["!", "~", "**", "?"],
         answer: 3,
+        description: "",
       },
       {
         question: "再代入できない演算子を選びなさい",
         answers: [":", "!~", "[]", "%"],
         answer: 0,
+        description: "",
       },
       {
         question: "再代入できない演算子を選びなさい",
         answers: ["<<", "`", "..", "&"],
         answer: 2,
+        description: "",
       },
       {
         question: "再代入できない演算子を選びなさい",
         answers: ["<=", "...", "=~", "^"],
         answer: 1,
+        description: "",
       },
       {
         question: "再代入できない演算子を選びなさい",
         answers: ["not", "/", "+", ">>"],
         answer: 0,
+        description: "",
       },
       {
         question: "再代入できない演算子を選びなさい",
         answers: ["[]=", "!", "&&", "!="],
         answer: 2,
+        description: "",
       },
       {
         question: "再代入できない演算子を選びなさい",
         answers: [">", "||", ">>", "+@"],
         answer: 1,
+        description: "",
       },
       {
         question: "再代入できない演算子を選びなさい",
         answers: ["-", "^", "=~", "or"],
         answer: 3,
+        description: "",
       },
       {
         question: "再代入できない演算子を選びなさい",
         answers: ["[]", "|", "::", "&"],
         answer: 2,
+        description: "",
       },
       {
         question: "再代入できない演算子を選びなさい",
         answers: ["===", "+", "*", "自己代入演算子"],
         answer: 3,
+        description: "",
       },
     ],
     questionIndex: 0,
