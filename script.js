@@ -52,7 +52,7 @@ new Vue({
       },
       {
         question:
-          "arrayクラスのselectメソッドのエイリアスメソッドはどれでしょう",
+          "Enumerableクラスのselectメソッドのエイリアスメソッドはどれでしょう",
         answers: ["find_all", "collect", "reduce", "detect"],
         answer: 0,
         description: "",
