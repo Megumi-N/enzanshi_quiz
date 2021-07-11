@@ -232,6 +232,53 @@ new Vue({
         answer: 0,
         description: "",
       },
+      {
+        question: "フォーマット文字列%xの説明で正しいものはどれか。",
+        answers: [
+          "日付(%m/%d/%y)",
+          "月を表す数字(01-12)",
+          "分(00-59)",
+          "西暦の下2桁(00-99)",
+        ],
+        answer: 0,
+        description: "",
+      },
+      {
+        question: "フォーマット文字列%mの説明で正しいものはどれか。",
+        answers: ["月を表す数字(01-12)", "分(00-59)"],
+        answer: 0,
+        description: "",
+      },
+      {
+        question: "フォーマット文字列%Mの説明で正しいものはどれか。",
+        answers: ["月を表す数字(01-12)", "分(00-59)"],
+        answer: 1,
+        description: "",
+      },
+      {
+        question: "フォーマット文字列%dの説明で正しいものはどれか。",
+        answers: ["日(01-31)", "日付(%m/%d/%y)"],
+        answer: 0,
+        description: "",
+      },
+      {
+        question: "フォーマット文字列%Dの説明で正しいものはどれか。",
+        answers: ["日(01-31)", "日付(%m/%d/%y)"],
+        answer: 1,
+        description: "",
+      },
+      {
+        question: "フォーマット文字列%yの説明で正しいものはどれか。",
+        answers: ["西暦を表す数(9999)", "西暦の下2桁(00-99)"],
+        answer: 1,
+        description: "",
+      },
+      {
+        question: "フォーマット文字列%yYの説明で正しいものはどれか。",
+        answers: ["西暦を表す数(9999)", "西暦の下2桁(00-99)"],
+        answer: 0,
+        description: "",
+      },
     ], // end
     questionIndex: 0,
     answers: [],
