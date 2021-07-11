@@ -279,6 +279,174 @@ new Vue({
         answer: 0,
         description: "",
       },
+      {
+        question: "フォーマット文字列%xと同じ結果を表すものはどれか。",
+        answers: ["%y", "%m", "%D", "%M"],
+        answer: 2,
+        description: "",
+      },
+      {
+        question: "Arrayクラスでdelete_ifと同じ動作をするメソッドはどれか。",
+        answers: ["reject", "reject!", "reject_if", "delete"],
+        answer: 1,
+        description:
+          "reject_ifメソッドは存在しない。deleteメソッドは引数で指定されたvalと等しい要素を全て削除する(破壊的)。rejectはブロック内の式で偽になったものを配列にして返す。",
+      },
+      {
+        question:
+          "次のStringクラスのインスタンスメソッドで存在しないものはどれか。",
+        answers: ["to_f", "to_h", "to_i", "to_r", "to_s", "to_sym"],
+        answer: 1,
+        description: "",
+      },
+      {
+        question: "p String.method_defined?(:to_h)の実行結果はどれか。",
+        answers: ["true", "false"],
+        answer: 1,
+        description:
+          "Moduleクラスのmethod_difined?は、引数のメソッド(StringまたはSymbol)が存在していればtrueを返し、存在していなければfalseを返す。to_hは存在しないのでfalseが返る。",
+      },
+      {
+        question: 'p ["a","b"].product(["c","d"])の実行結果はどれか。',
+        answers: [
+          "[['a', 'c'], ['a', 'd'], ['b', 'c'], ['b', 'd']]",
+          "['a', 'c'], ['a', 'd'], ['b', 'c'], ['b', 'd']",
+        ],
+        answer: 0,
+        description:
+          "Arrayクラスのインスタンスメソッドは、レシーバの配列と引数の配列から、それぞれ1つ要素を取り出し新しい配列を作成し、全ての配列を要素とする配列([[],[]..]ということ)を返す。",
+      },
+      {
+        question:
+          "Kernelクラスのモジュール関数openの第二引数のオープンコード・エンコーディングのうち、ファイルの読み書き両用モードで読み書き位置が先頭にセットされ、ファイルが存在していても変更は加えないものはどれか。",
+        answers: ["r+", "w+", "a+"],
+        answer: 0,
+        description: "r+：ファイルの読み書き位置は先頭にセットされる",
+      },
+      {
+        question:
+          "Kernelクラスのモジュール関数openの第二引数のオープンコード・エンコーディングのうち、ファイルの読み書き両用モードで読み書き位置が先頭にセットされ、ファイルが存在していれば内容を空にするものはどれか。",
+        answers: ["r+", "w+", "a+"],
+        answer: 1,
+        description:
+          "w+：r+ と同じだが、オープン時にファイルがすでに存在していればその内容を空にする。",
+      },
+      {
+        question:
+          "Kernelクラスのモジュール関数openの第二引数のオープンコード・エンコーディングのうち、ファイルの読み書き両用モードで読み書き位置が先頭にセットされるが、書き込みはファイル末尾になるものはどれか。",
+        answers: ["r+", "w+", "a+"],
+        answer: 2,
+        description:
+          "a+：r+と同様、ファイルの読み込み位置は先頭にセットされる、書き込みは常にファイル末尾に行われる。",
+      },
+      {
+        question:
+          "Kernelクラスのモジュール関数openの第二引数のオープンコード・エンコーディングのうち、IO#seekの影響を受けないものはどれか。",
+        answers: ["r+", "w+", "a+"],
+        answer: 2,
+        description: "a+の書き込みは IO#seek などの影響を受けない。",
+      },
+      {
+        question:
+          "[6, 5, 4, 3, 2, 1].partition {|i| i % 3 == 0 }の実行結果で正しいものはどれか",
+        answers: [
+          "[[6, 3], [5, 4, 2, 1]]",
+          "[[5, 4, 2, 1],[6, 3]]",
+          "[[6],[3]]",
+        ],
+        answer: 0,
+        description:
+          "Enumerableクラスのpartitionメソッドは、条件を満たす要素を真の場合と偽の場合で分割する。",
+      },
+      {
+        question:
+          '["1", "2", "3"]という実行結果にしたい時、正しいものはどれか。',
+        answers: [
+          "'1;2:3'.split(;|:)'",
+          "'1;2:3'.split(/;|:/)",
+          "'1;2:3'.slice(;|:)'",
+        ],
+        answer: 1,
+        description:
+          "Stringクラスのsplitメソッドは、引数に指定された区切り文字で分割して配列にする。",
+      },
+      {
+        question:
+          "x=0の時、1.step(4,1){|i| print x += 1}の実行結果で正しいものはどれか。",
+        answers: ["1234", "4", "4321"],
+        answer: 0,
+        description:
+          "Numericクラスのstepメソッドは第一引数(limit)と第二引数(step)を設定し、レシーバからlimitまでstep分加算し、ブロックに渡す。",
+      },
+      {
+        question: "Stringクラスのchopの説明で正しいものを選びなさい。",
+        answers: [
+          "文字列の最初の文字を取り除いた新しい文字列を生成して返す非破壊的メソッド",
+          "文字列の最初の文字を取り除いた新しい文字列を生成して返す破壊的メソッド",
+          "文字列の最後の文字を取り除いた新しい文字列を生成して返す非破壊的メソッド",
+          "文字列の最後の文字を取り除いた新しい文字列を生成して返す破壊的メソッド",
+        ],
+        answer: 3,
+        description:
+          'chopメソッドは文字列の最後の文字を取り除いた新しい文字列を生成して返す。ただし、文字列の終端が "＼r＼n" であればその 2 文字を取り除く。非破壊的メソッド。',
+      },
+      {
+        question:
+          'h = {1=>"a", 2=>"b"}の時、p h.values_at(1,2,3)の結果で正しいものはどれか。',
+        answers: ["['0', '1', nill]", "['a', 'b', nil]"],
+        answer: 1,
+        description:
+          "Hashクラスのvalues_atメソッドは、引数で指定されたキーに対応する値を配列にして返す非破壊的メソッド。",
+      },
+      {
+        question:
+          'p "apple".sub(/p+/, ' - ")の実行結果として正しいものはどれか。",
+        answers: ["ale", "a-le", "a-ple"],
+        answer: 1,
+        description:
+          "Stringクラスのsubメソッドは、文字列中で引数にマッチした最初の部分を第二引数で置き換えた文字列を生成して返す非破壊的メソッド。",
+      },
+      {
+        question: "1.eql?(0.1)の実行結果として正しいものはどれか。",
+        answers: ["true", "false"],
+        answer: 1,
+        description:
+          "Numericクラスのeql?メソッドは同じクラスのobjectかつ==で等しいと判定されるとtrueになる。",
+      },
+      {
+        question:
+          "16進数で一つの桁において扱うことのできる数値で間違っているものはどれか。",
+        answers: ["0", "G", "E", "9"],
+        answer: 1,
+        description:
+          "16真数の1桁で扱われるもの：0、1、2、3、4、5、6、7、8、9、A、B、C、D、E、F",
+      },
+      {
+        question:
+          "Threadクラスのスレッドを生成するstart(fork)とnewの違いは何か。",
+        answers: [
+          "start(fork)はinitializeメソッドを呼ばない",
+          "オブジェクトが生成されない",
+        ],
+        answer: 0,
+        description:
+          "基本的にThread.new と同じだがinitialize メソッドは呼ばない。",
+      },
+      {
+        question:
+          'File.dirname("home/user/tmp")の実行結果で正しいものはどれか。',
+        answers: ["home", "home/user", "home/user/tmp"],
+        answer: 1,
+        description:
+          "File.dirnameは引数に指定した文字列の一番後ろの/より前の文字列を返す。",
+      },
+      {
+        question: 'File.dirname("homeusertmp")の実行結果で正しいものはどれか。',
+        answers: [".", "home/user"],
+        answer: 0,
+        description:
+          'File.dirnameは引数に指定した文字列の一番後ろの/より前の文字列を返す。/を含まない文字列の場合"."を返す。',
+      },
     ], // end
     questionIndex: 0,
     answers: [],
