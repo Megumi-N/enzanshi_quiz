@@ -446,6 +446,56 @@ new Vue({
         description:
           'File.dirnameは引数に指定した文字列の一番後ろの/より前の文字列を返す。/を含まない文字列の場合"."を返す。',
       },
+      {
+        question:
+          "[1,2,3].each_cons(2){|i| print i}の実行結果で正しいものはどれか。",
+        answers: ["[1, 2][2, 3]", "[1, 2][3, nil]", "[1, 2]", "[1, 2][3]"],
+        answer: 0,
+        description: "",
+      },
+      {
+        question:
+          "[1,2,3].each_slice(2){|i| p i}の実行結果で正しいものはどれか。",
+        answers: ["[1, 2][2, 3]", "[1, 2][3, nil]", "[1, 2]", "[1, 2][3]"],
+        answer: 3,
+        description: "",
+      },
+      {
+        question: "p ({a:100,b:100}).invertの実行結果で正しいものはどれか",
+        answers: ["{100=>:b}", "{100=>:a}"],
+        answer: 0,
+        description:
+          "入れ替えの結果が重複した場合、後に定義されたものが優先される。",
+      },
+      {
+        question:
+          "次のStringクラスのインスタンスメソッドで存在しないものはどれか。",
+        answers: ["to_f", "to_a", "to_i", "to_r", "to_s", "to_sym"],
+        answer: 1,
+        description: "",
+      },
+      {
+        question: "do … endと{}で結合度が強いのはどちらか",
+        answers: ["do … end", "{}"],
+        answer: 1,
+        description: "",
+      },
+      {
+        question: "stripの説明で正しいものはどれか",
+        answers: [
+          "末尾から改行コードを取り除く非破壊的メソッド",
+          "文字列の先頭と末尾の空白文字(＼t＼r＼n＼f＼v)を削除する非破壊的メソッド",
+          "末尾の文字を取り除く。末尾が＼r＼nであれば2文字とも取り除く",
+        ],
+        answer: 1,
+        description: "",
+      },
+      {
+        question: 'a=*"a"の時、p aの実行結果として正しいのはどれか',
+        answers: ['["a"]', '"a"', "nil"],
+        answer: 0,
+        description: "",
+      },
     ], // end
     questionIndex: 0,
     answers: [],
