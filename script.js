@@ -274,7 +274,7 @@ new Vue({
         description: "",
       },
       {
-        question: "フォーマット文字列%yYの説明で正しいものはどれか。",
+        question: "フォーマット文字列%Yの説明で正しいものはどれか。",
         answers: ["西暦を表す数(9999)", "西暦の下2桁(00-99)"],
         answer: 0,
         description: "",
@@ -495,6 +495,48 @@ new Vue({
         answers: ['["a"]', '"a"', "nil"],
         answer: 0,
         description: "",
+      },
+      {
+        question: "Stringクラスのメソッドで存在しないのはどちらか",
+        answers: ["append", "<<"],
+        answer: 0,
+        description: "",
+      },
+      {
+        question: "Date#strftimeのフォーマット文字列で%Fは何を表すか",
+        answers: ["日付(%Y-%m-%d)", "日付(%y/%m/%d)"],
+        answer: 0,
+        description: "",
+      },
+      {
+        question: "p [1,2].zip([3,4])の実行結果はどれか",
+        answers: ["[[1, 2], [3, 4]]", "[[1, 3], [2, 4]]"],
+        answer: 1,
+        description: "",
+      },
+      {
+        question: "メソッドと変数が探索順位で優先されるのはどちらか。",
+        answers: ["変数", "メソッド"],
+        answer: 0,
+        description: "変数が優先される",
+      },
+      {
+        question: "3.times {|i| print i}の実行結果はどれか",
+        answers: ["123", "012"],
+        answer: 1,
+        description: "",
+      },
+      {
+        question: 'p "1;2:3".split(";")の実行結果として正しいものはどれか',
+        answers: ['["1", "2:3"]', '["12:3"]'],
+        answer: 0,
+        description: "",
+      },
+      {
+        question: "stripメソッドは破壊的メソッド",
+        answers: ["正しい", "誤り"],
+        answer: 1,
+        description: "stripは非破壊的メソッドである",
       },
     ], // end
     questionIndex: 0,
